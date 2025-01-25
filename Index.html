@@ -7,12 +7,14 @@
 	<link rel="stylesheet" href="Assets/Style.css">
 </head>
 <body>
+	<br>
 	<div>
 		<b>Input Number of Questions: </b>
 		<input type="number" id="number_of_questions" min="1" value="1">
 		<button onclick="generateQuestions()">Submit</button>
 	</div>
-	<br><br>
+	<br>
+	<br>
 	<div class="test_container">
 		<div class="question_wrapper">
 			<div class="question_container" id="question_container"></div>
@@ -20,9 +22,14 @@
 		<div class="results_wrapper">
 			<div class="score_container">
 				<h1 id="test_score" class="score">Score: 0/0</h1>
+				<div>
+					<b>Exam Name: </b>
+					<textarea id="exam_name" rows="1" cols="40" placeholder="Enter exam name here"></textarea>
+				</div>
+				<button onclick="saveScore()">Save Score</button>
 			</div>
 			<div class="results_container">
-				
+				<div class="results_table"></div>
 			</div>
 		</div>
 	</div>
