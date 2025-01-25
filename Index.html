@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Manual Exam Checker</title>
+	<link rel="stylesheet" href="Assets/Style.css">
+</head>
+<body>
+	<div>
+		<b>Input Number of Questions: </b>
+		<input type="number" id="number_of_questions" min="1" value="1">
+		<button onclick="generateQuestions()">Submit</button>
+	</div>
+	<br><br>
+	<div class="test_container">
+		<div class="question_wrapper">
+			<div class="question_container" id="question_container"></div>
+		</div>
+		<div class="results_wrapper">
+			<div class="score_container">
+				<h1 id="test_score" class="score">Score: 0/0</h1>
+			</div>
+			<div class="results_container">
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="Scripts/Index.js"></script>
+</body>
+</html>
